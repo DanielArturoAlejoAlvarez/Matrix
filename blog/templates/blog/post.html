@@ -1,0 +1,7 @@
+{% extends "personal/header.html" %}
+
+{% block content %}
+	<h3>{{ post.title }}</h3>
+	<h6>{{ post.date | date:"l j F Y h:i:s A"}}</h6>
+	<p>{{ post.body | safe | linebreaks }}</p>
+{% endblock %}
