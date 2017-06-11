@@ -25,7 +25,7 @@ SECRET_KEY = '%w_$2rr2sn=t_xi%x4(tl#7f^3v8pm&2j0cn$k7q5#9*ud+!u1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['blooming-temple-69185.herokuapp.com']
 
 
 # Application definition
@@ -120,3 +120,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join((BASE_DIR), 'static')
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
